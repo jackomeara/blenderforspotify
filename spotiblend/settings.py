@@ -23,11 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(find_dotenv())
 #SECRET_KEY = os.environ['SECRET_KEY']
-#CLIENT_ID = os.environ['CLIENT_ID']
-#CLIENT_SECRET = os.environ['CLIENT_SECRET']
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+CLIENT_ID = os.environ['CLIENT_ID']
+CLIENT_SECRET = os.environ['CLIENT_SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
