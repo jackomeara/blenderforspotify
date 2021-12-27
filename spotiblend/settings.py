@@ -31,7 +31,7 @@ CLIENT_SECRET = os.environ.get('CLIENT_SECRET', '')
 #DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blenderforspotify.herokuapp.com']
 
 
 # Application definition
