@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(find_dotenv())
 SECRET_KEY = os.environ['SECRET_KEY']
 CLIENT_ID = os.environ['CLIENT_ID']
-CLIENT_SECRET = os.environ['SECRET_KEY']
+CLIENT_SECRET = os.environ['CLIENT_SECRET']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

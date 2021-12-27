@@ -6,14 +6,15 @@ from spotiblend.settings import CLIENT_ID, CLIENT_SECRET
 class User_Request():
     def authenticate(self, authcode):
         auth_header = b64encode(str('%s:%s' % (CLIENT_ID, CLIENT_SECRET)).encode('ascii'))
-        headers = {'Authorization': 'Basic %s' % auth_header.decode('ascii'), 'Content-Type':'application/x-www-form-urlencoded'}
+        headers = {'Authorization': "Basic %s" % auth_header.decode('ascii'), 'Content-Type':'application/x-www-form-urlencoded'}
         response = requests.post('https://accounts.spotify.com/api/token?grant_type=authorization_code&code=%s&redirect_uri=http://localhost:8000/callback' % authcode, headers=headers)
         authtoken = response.json()['access_token']
         return authtoken
         
-    def getsongid(self, track):
+    def getsongid(self, track, headers):
+        #Not currently in use
         params={'limit':'1'}
-        response = requests.get('https://api.spotify.com/v1/search?q=%s&type=track' % track, headers=self._headers, params=params)
+        response = requests.get('https://api.spotify.com/v1/search?q=%s&type=track' % track, headers=headers, params=params)
         return response.json()['tracks']['items'][0]['id']
 
     def getids(self, list, type, headers):
