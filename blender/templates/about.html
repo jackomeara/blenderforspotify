@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+<br>
+<div class="container-md">
+<div class='col-sm-6 mx-auto'><h1 class="text-primary">About</h1><br>
+<p class="text-body">Blender generates custom playlists and adds them straight to users' Spotify account, using Spotify's own recommendation system. Users can choose up to 5 seeds, from artists, tracks or songs, which 
+    are then 'blended' into a playlist. 
+</p><br>
+<p class="text-body">I made this app as I wanted to use Spotify's recommendation capabilities, which aren't being used in the main Spotify app. This app is different to Spotify radio, as it doesn't specifically select 
+    songs you listen to a lot, creating a more fresh listening experience. It also offers more than Spotify's recommended songs feature, as you can easily create a whole playlist of songs, with your custom
+    seeds with my app.  
+</p>
+<br><br><h1 id="demo" class="text-primary">Demo</h1>
+<br><p class="text-body">How about an example? To illustrate how to use this app, below is a demo of some seeds and the playlist it returned.</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Field</th>
+        <th>Entry</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Playlist Name</td>
+        <td>Chill</td>
+    </tr>
+    <tr>
+        <td>Length</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Seed Track</td>
+        <td>Ivy Frank Ocean</td>
+    </tr>
+    <tr>
+        <td>Seed Artist</td>
+        <td>Mac Miller</td>
+    </tr>
+    <tr>
+        <td>Seed Genre</td>
+        <td>Chill</td>
+    </tr>
+    <tr>
+        <td>Seed Type</td>
+        <td>Artist</td>
+    </tr>
+    <tr>
+        <td>Extra Seed</td>
+        <td>Mac Demarco</td>
+    </tr>
+    </tbody>
+</table>
+<br><p class="text-body">These selections returned the Spotify playlist detailed below, into the user's Spotify account.</p><br>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Song</th>
+        <th>Artist</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Where This Flower Blooms</td>
+        <td>Tyler, The Creator feat. Frank Ocean</td>
+    </tr>
+    <tr>
+        <td>SUGAR</td>
+        <td>BROCKHAMPTON</td>
+    </tr>
+    <tr>
+        <td>On Fye</td>
+        <td>The Simps, Eyedress, zzzahara</td>
+    </tr>
+    <tr>
+        <td>Les</td>
+        <td>Childish Gambino</td>
+    </tr>
+    <tr>
+        <td>Provider</td>
+        <td>Frank Ocean</td>
+    </tr>
+    <tr>
+        <td>Money</td>
+        <td>The Drums</td>
+    </tr>
+    <tr>
+        <td>Carry Me Home</td>
+        <td>Jorja Smith, Maverick Sabre</td>
+    </tr>
+    <tr>
+        <td>All Of Our Yesterdays</td>
+        <td>Mac Demarco</td>
+    </tr>
+    <tr>
+        <td>Donald Trump</td>
+        <td>Mac Miller</td>
+    </tr>
+    <tr>
+        <td>Tree Among Shrubs</td>
+        <td>Men I Trust</td>
+    </tr>
+    <tr>
+        <td>Shampoo Bottles</td>
+        <td>Peach Pit</td>
+    </tr>
+    <tr>
+        <td>Potato Salad</td>
+        <td>Tyler, The Creator feat. A$AP Rocky</td>
+    </tr>
+    <tr>
+        <td>Same Druge</td>
+        <td>Chance the Rapper</td>
+    </tr>
+    <tr>
+        <td>A Little While</td>
+        <td>Yellow Days</td>
+    </tr>
+    <tr>
+        <td>Right My Wrongs</td>
+        <td>Bryson Tiller</td>
+    </tr>
+    </tbody>
+</table>
+</div></div>
+{% endblock %}

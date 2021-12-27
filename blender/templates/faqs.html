@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+<br>
+<div class="container-md">
+    <div class="col-sm-6 mx-auto">
+        <h1 class="text-primary">FAQ's</h1><br>
+        <h3 class="text-dark"><b>How do I create a playlist?</b></h3>
+        <p class="text-body">Click <a href="/home">Home</a> to start creating a new playlist. First you'll need to enter a name for your playlist and how many songs you want.
+        Then, enter an artist, track and genre you want your playlist to be inspired by - called 'seeds'. You can also add an extra two of the above choices to give you more
+        control over your playlist.
+        <br><br>
+        Finally, click Create and your playlist will be generated. All going well, your playlist can be found on the Spotify page of the account you gave permissions
+        with at the start.
+        <br>If you're still not sure, the <a href="/about#demo">Demo</a> gives some sample inputs and the resulting playlist it creates.            
+        </p>
+<br><br>
+        <h3 class="text-dark"><b>How does Blender work?</b></h3>
+        <p class="text-body">Blender for Spotify works by harnessing Spotify's recommendation capabilities, and using them to create custom playlists. It is the same
+            capability that Spotify use when they recommend a few songs at the bottom of your playlists, or offer you new tracks in the Discover Weekly playlist.
+        </p>
+<br><br>
+        <h3 class="text-dark"><b>Why doesn't my playlist match my seeds?</b></h3>
+        <p class="text-body">If there are songs in your playlist that don't match your seeds, it is possible that Spotify recognised your input as something different - if you entered
+            'Animals' as a track seed and wanted Animals by Martin Garrix, Spotify could think you mean Animals by Coldplay. To combat this, you can enter the song title and artist in the 
+            Seed Track field to ensure you get the right one, so for Seed Track you could have put 'Animals Martin Garrix'.
+        </p>
+<br><br>
+        <h3 class="text-dark"><b>Why isn't my playlist showing up?</b></h3>
+        <p class="text-body">Firstly, ensure you are connected to the internet on your Spotify app. If you have a lot of playlists, it might be hard to find - try search for your
+            playlist name. When Blender successfully generates your playlist, it will advise you it is done, so check if you can see that message.
+        </p>
+<br><br>
+        <h3 class="text-dark"><b>My Question/Problem isn't in FAQ's!</b></h3>
+        <p class="text-body">If you can't answer your question or solve your problem from the FAQ's section, don't hesitate to contact me. My contact details can be found
+            on the <a href='/contact'>Contact</a> page.
+        </p>
+<br><br>
+</div>
+{% endblock %}

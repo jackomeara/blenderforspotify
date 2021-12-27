@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block maincontent  %}
+{% load crispy_forms_tags %}
+<div class="container-md">
+<div class="col-sm-6 mx-auto">
+  <h1 class="text-primary">Create Playlist</h1><br>
+  <p class="text-left col-lg-8">  Create a unique playlist below based off your chosen artists, tracks and genres. Simply pick at least one song, artist and genre below and a playlist will be
+    generated based on your choices. Take a look at the <a href="/about#demo">Demo</a> for more info.</p>
+<form action='' method="post">
+  {%csrf_token%}
+    <div class="row">
+      <div class="col-lg-4">
+      {{form.name|as_crispy_field}}
+      </div>
+      <div class="col-lg-2">
+        {{form.length|as_crispy_field}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-lg-4">
+        {{form.track1|as_crispy_field}}
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-lg-6 col-lg-4">
+        {{form.artist1|as_crispy_field}}
+    </div>
+      </div>
+    <div class="row">
+      <div class="col-lg-6">
+        {{form.genre1|as_crispy_field}}
+    </div></div>
+    <div class="row">
+      <div class="col-sm-2">
+      {{form.type4|as_crispy_field}}
+      </div>
+      <div class="col-lg-4">
+        {{form.choice4|as_crispy_field}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2">
+      {{form.type5|as_crispy_field}}
+      </div>
+      <div class="col-lg-4">
+        {{form.choice5|as_crispy_field}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+      <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+    </form>
+  </div>
+
+{% endblock %}
+
+{% block jscontent %}
+
+{% endblock %}

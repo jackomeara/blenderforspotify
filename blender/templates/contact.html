@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+{% load static %}
+<br>
+<div class="container-md">
+    <div class="col-sm-6 mx-auto">
+        <h1 class="text-primary">Contact Me</h1><br>
+        <p class="text-body">If you would like to contact me with some issue or feedback relating to this project, you can email me at <a href="mailto:jackomdev@gmail.com">jackomdev@gmail.com</a>.
+        I can also be reached on social media at the following links.
+        <br>
+        <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="col-sm-1"><a href="https://www.instagram.com"><img class="img-fluid" src="{% static 'images/instagram.jpg' %}"></a></li>
+            <li class="col-sm-1"><a href="https://www.linkedin.com/jackomeara"><img class="img-fluid" src="{% static 'images/linkedin.jpg' %}"></a></li>
+            <li class="col-sm-1"><a href="https://www.github.com/jackomeara"><img class="img-fluid" src="{% static 'images/github.jpg' %}"></a></li>
+        </ul>
+    </p>
+    </div>
+</div>
+
+{% endblock %} 

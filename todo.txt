@@ -1,0 +1,13 @@
+TODO:
+    - fix extra genre problem -> text input, can easily be wrong
+    - fix contact page on mobile view
+    - refresh token deal with /home endpoint when not authorised
+    - improve about -> better about text
+    - get secret keys out of code + urls
+    - decide hosting method -> rpi with wifi, else cloud
+    - set up hosting
+    - get domain name
+
+FUTURE FEATURES:
+    - integrate advanced options -> valence, engery, tempo etc
+    - deal with longer playlist requests -> <100 songs (separate into different requests.)
