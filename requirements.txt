@@ -14,3 +14,4 @@ soupsieve==2.3.1
 spotify-token==1.0.0
 sqlparse==0.4.2
 urllib3==1.26.7
+gunicorn==20.1.0

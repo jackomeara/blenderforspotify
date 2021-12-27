@@ -1,0 +1,1 @@
+web: gunicorn spotiblend.wsgi --log-file--
