@@ -7,7 +7,7 @@ class User_Request():
     def authenticate(self, authcode):
         auth_header = b64encode(str('%s:%s' % (CLIENT_ID, CLIENT_SECRET)).encode('ascii'))
         headers = {'Authorization': "Basic %s" % auth_header.decode('ascii'), 'Content-Type':'application/x-www-form-urlencoded'}
-        response = requests.post('https://accounts.spotify.com/api/token?grant_type=authorization_code&code=%s&redirect_uri=http://localhost:8000/callback' % authcode, headers=headers)
+        response = requests.post('https://accounts.spotify.com/api/token?grant_type=authorization_code&code=%s&redirect_uri=http://blenderforspotify.herokuapp.com/callback' % authcode, headers=headers)
         authtoken = response.json()['access_token']
         return authtoken
         
